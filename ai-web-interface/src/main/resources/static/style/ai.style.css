@@ -1,0 +1,20 @@
+
+.ai-chat-input {
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+}
+
+.ai-chat-messages {
+    min-height: 88vh;
+    max-height: 88vh;
+    overflow-y: scroll;
+}
+
+.ai-chat-message-me {
+    background-color: #e5edf9;
+}
+
+.ai-chat-message-ui {
+    background-color: #e5f9e9;
+}

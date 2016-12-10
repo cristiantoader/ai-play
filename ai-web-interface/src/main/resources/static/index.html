@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>AI web interfacing</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <!-- CSS Libraries. -->
+    <link rel="stylesheet" href="libs/bower/angular/angular-csp.css">
+    <link rel="stylesheet" href="libs/bower/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS. -->
+    <link rel="stylesheet" href="style/ai.style.css">
+</head>
+
+<body ng-app="AiWeb">
+
+<div ng-controller="AiMessageController">
+
+    <div class="container">
+        <div class="well ai-chat-messages">
+            <div class="well ai-chat-message-me" ng-repeat="message in messages track by $index">{{message}}</div>
+        </div>
+    </div>
+
+    <!-- Chat input box.-->
+    <div class="ai-chat-input">
+        <div class="container">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="inputMessage" placeholder="Type here..">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" ng-click="sendMessage()">Send</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Libraries. -->
+<script src="libs/bower/jquery/dist/jquery.min.js"></script>
+<script src="libs/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="libs/bower/angular/angular.min.js"></script>
+
+<!-- Angular application. -->
+<script src="scripts/ai.modules.js"></script>
+<script src="scripts/AiMessageController.js"></script>
+<script src="scripts/AiMessageService.js"></script>
+<script src="scripts/AiMessage.js"></script>
+
+</body>
+</html>
