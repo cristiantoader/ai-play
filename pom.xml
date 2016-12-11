@@ -19,6 +19,7 @@
         <module>ai-web-interface</module>
         <module>ai-file-manager</module>
         <module>ai-portal</module>
+        <module>ai-neural</module>
     </modules>
 
     <properties>
